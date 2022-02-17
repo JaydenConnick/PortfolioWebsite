@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Selima;
+    src: url(../Resources/fonts/selima/Selima\ .otf);
+}
+@font-face {
+    font-family: League-gothic;
+    src: url(../Resources/fonts/League-Gothic/LeagueGothic-Regular.otf);
+}
+@font-face {
+    font-family: Sacramento;
+    src: url(../resources/fonts/Sacramento/Sacramento-Regular.ttf)
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../resources/fonts/Montserrat/Montserrat-VariableFont_wght.ttf)
+}
+
+html {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+body {
+    border: 5px solid black;
+}
+
+header {
+    display: flex;
+
+    flex-direction: column;
+}
+
+#topHeading {
+    font-family: League-gothic;
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 10px;
+
+}
+
+h1 {
+}
+
+#bottomHeading {
+    font-family: Selima;
+    font-size: 90px; 
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+img {
+     width: 80%;
+     margin: 0 10%;
+     margin-bottom: 25px;
+     border: 25px solid black;
+     box-sizing: border-box;
+}
+
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    margin: 0 175px;
+    padding: 0;
+    border-bottom: 15px solid black;
+    width: auto;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 10px 0 10px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 4px solid black;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.tab:hover {
+    background-color: #AAA;
+}
+
+.tab.active {
+    background-color: #CCC;
+}
+
+.tab-content {
+    margin: 0 175px 25px;
+    border-left: 15px solid black;
+    border-bottom: 15px solid black;
+    border-right: 15px solid black;
+    padding: 10px;
+    height: 300px;
+}
+
+footer h2 {
+    font-family: Sacramento;
+    font-size: 40px;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+
+footer h3 {
+    font-family: Montserrat;
+    font-size: 15px;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
